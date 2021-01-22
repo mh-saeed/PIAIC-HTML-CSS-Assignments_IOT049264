@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav style="
+        background-color: cornflowerblue;
+        width: 70%;
+        border-radius: 14px;
+        margin: auto;">
+        <img src="img/Logo.png" alt="Logo" width="125px" style="padding: 8px 0px 4px 8px; " />
+        <ul style="list-style-type: none;
+            margin: 8px 0px 0px 350px;
+            padding: 0;
+            position: absolute;
+            top: 35px;
+            display: inline-block;
+            ">
+            <li style="display: inline-block ; margin-left: 25px;">
+                <a href="index.html" style="text-decoration: none; color: black; font-size: 20px;">HOME</a>
+            </li>
+            <li style="display: inline-block; margin-left: 25px">
+                <a href="about.html" style="text-decoration: none; color: black; font-size: 20px;">ABOUT</a>
+            </li>
+            <li style="display: inline-block; margin-left: 25px">
+                <a href="portfolio.html" style="text-decoration: none; color: black; font-size: 20px;">PORTFOLIO</a>
+            </li>
+            <li style="display: inline-block; margin-left: 25px">
+                <a href="contact.html" style="text-decoration: none; color: black; font-size: 20px;">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div style=" width: 70%; margin: auto; padding-top: 5px;">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" maxlength="24" size="40px" />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" size="40px" />
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <div>
+                <label for="">How did you hear about us? </label>
+                <select name="opt" id="opt">
+                    <option value="google">Google</option>
+                    <option value="fb">Facebook</option>
+                    <option value="email">Email</option>
+                    <option value="twitter">Twitter</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Would You visit again?</label><br>
+                <input type="radio" name="info" id=""> Yes
+                <input type="radio" name="info" id=""> No
+                <input type="radio" name="info" id=""> Maybe
+            </div>
+            <br>
+            <div>
+                <label for="">Comments:</label> <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br><input type="checkbox" name="" id=""> <label for="">Sign me in for email updates?</label>
+                <br><input type="button" value="Submit Review">
+            </div>
+        </fieldset>
+    </div>
+    <div style="text-align: center;">
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14485.890097298487!2d67.0483187!3d24.8135093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2401821560d53462!2sPanacloud%20Pvt.%20Ltd.%20Pakistan!5e0!3m2!1sen!2s!4v1611301461473!5m2!1sen!2s"
+            width="1000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+    <br>
+    <footer style="
+    background-color: cornflowerblue;
+    height: 40px;
+    width: 70%;
+    padding: 1px 0px 1px 0px; 
+    border-radius: 10px;
+    margin: auto; bottom: 0;">
+        <p style="  text-align: center;"> Copyright <span> &#169; </span> 2021. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
