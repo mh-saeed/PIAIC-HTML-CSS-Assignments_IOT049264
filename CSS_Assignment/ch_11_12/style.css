@@ -1,0 +1,27 @@
+* {
+  font-size: 26px;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  width: 80%;
+  margin: auto;
+}
+h1 {
+  font-size: 150%;
+}
+#abv {
+  text-shadow: 4px 4px 4px dimgray;
+}
+h2::first-letter {
+  font-size: 200%;
+}
+ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+ul > li > a:active {
+  color: blue;
+}
+#owner {
+  text-align: center;
+}
