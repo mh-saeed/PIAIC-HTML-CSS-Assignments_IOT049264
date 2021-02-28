@@ -14,7 +14,7 @@ let courses = [];
 
 while (x < 5) {
 
-    this["course" + x] = prompt(`Enter course1 Name`, `JavaScript`);
+    this["course" + x] = prompt(`Enter course ${x + 1} Name`, `e.g: Web Designing, JS, React, ReactNative, MongoDB`);
 
     courses.push(this["course" + x]);
 
