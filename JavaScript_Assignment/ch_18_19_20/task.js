@@ -10,7 +10,7 @@ let courses = [];
 
 for (let x = 0; x < 5; x++) {
 
-    this["course" + x] = prompt(`Enter course ${x + 1} Name`, `e.g: Web Designing, JS, React, ReactNative, MongoDB`);
+    this["course" + x] = prompt(`Enter course ${x + 1} Name\n(e.g: Web Designing, JS, React, ReactNative, MongoDB)`);
 
     courses.push(this["course" + x]);
 
@@ -19,7 +19,7 @@ window.alert(`All available courses \n${courses}`);
 
 for (let y = 0; y < 5; y++) {
 
-    this["course" + y] = prompt(`Course ${y + 1}`, courses[y]);
+    this["course" + y] = prompt(`Course ${y + 1} is: ${courses[y]}`, courses[y]);
 
     if (this["course" + y] !== courses[y]) {
 

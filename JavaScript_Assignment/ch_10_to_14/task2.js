@@ -10,7 +10,7 @@ var courseMarks = 0;
 
 while (x < 5) {
 
-    this["course" + x] = parseFloat(prompt(`Enter course ${x + 1} Marks`, `(Max marks 10)`));
+    this["course" + x] = parseFloat(prompt(`Enter course ${x + 1} Marks\n(Max marks 100)`));
 
     if (this["course" + x].toString() !== `NaN` && (typeof this["course" + x]) === `number` && this["course" + x] <= 100) {
 
@@ -22,6 +22,8 @@ while (x < 5) {
         if (conf) {
             window.location.reload();
             break;
+        } else {
+            break;
         }
     }
     x++;
@@ -32,9 +34,9 @@ function prc(courseMarks) {
     let totalMarks = 500;
     let perc = (courseMarks / totalMarks) * 100;
 
-    window.alert(`Your Obtained ${courseMarks} out of ${totalMarks} and\nYour Percentage is ${perc.toFixed(3)}`);
+    window.alert(`You Obtained ${courseMarks} marks out of ${totalMarks} marks and\nYour Percentage is ${perc.toFixed(2)}%`);
 
-    let conf = confirm(`Invalid entry!\n Click on "OK" for Reload the page and re-enter your marks`); // will give true if user click on ok and false if user click on cancel
+    let conf = confirm(`Click on "OK" to calculate again and "Cancel to quit!"`); // will give true if user click on ok and false if user click on cancel
 
     if (conf) {
 
@@ -42,4 +44,7 @@ function prc(courseMarks) {
 
     }
 }
-prc(courseMarks);
+if (x >= 4) {
+    prc(courseMarks);
+
+}
