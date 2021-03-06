@@ -47,13 +47,22 @@ function dayPeriod(dateParam) {
 function dob(y, m, d) {
 
     let myDOB = new Date(y, m - 1, d);
-    
+    let nextBD = new Date(dateCurrent.getFullYear() + 1, m - 1, d);
+
     console.log(`Your DOB is ` + myDOB);
-    
-    console.log(`You are ${(dateCurrent.getFullYear()-myDOB.getFullYear())} years ${dateCurrent.getMonth()+1} Month ${dateCurrent.getDay()} Days ${dateCurrent.getHours()} Hours ${dateCurrent.getMinutes()} Minutes ${dateCurrent.getSeconds()} Seconds old"`);
 
-    console.log(`Your Age in Days ${(dateCurrent.getTime()- myDOB.getTime())/(1000*60*60*24)}`);
+    console.log(`You are ${((dateCurrent.getTime() - myDOB.getTime()) / (1000 * 60 * 60 * 24 * 30.4166 * 12)).toFixed(0)} years ${dateCurrent.getMonth() + 1} Month ${dateCurrent.getDay()} Days ${dateCurrent.getHours()} Hours ${dateCurrent.getMinutes()} Minutes ${dateCurrent.getSeconds()} Seconds old`);
 
+    console.log(`Your Age in Days is ${(dateCurrent.getTime() - myDOB.getTime()) / (1000 * 60 * 60 * 24)}`);
+
+    console.log(`Your Age in hours is ${(dateCurrent.getTime() - myDOB.getTime()) / (1000 * 60 * 60)}`);
+
+    if (dateCurrent.getDate() === myDOB.getDate() && dateCurrent.getMonth() === myDOB.getMonth()) {
+        console.log(`Happy Birthday ${name}. Today is Your ${(dateCurrent.getFullYear() - myDOB.getFullYear())}st birthday`)
+    }
+    else {
+        console.log(`Your next birthday is after ${((nextBD.getTime() - dateCurrent.getTime()) / (1000 * 60 * 60 * 24))} days `);
+    }
 
 }
 
