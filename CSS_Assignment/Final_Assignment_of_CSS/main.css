@@ -1,0 +1,32 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#contLogo ul li {
+  margin-left: 14px;
+  color: white;
+  border-radius: 50%;
+  padding: 8px 10px 8px 10px;
+  background: rgb(70, 67, 67);
+  font-size: 20px;
+  display: inline;
+  float: left;
+}
+#contNumber ul li {
+  margin-left: 14px;
+  font-size: 24px;
+  display: inline;
+  float: right;
+}
+#contNumber ul li i {
+  color: green;
+}
+#contNumber ul li input {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  background: rgb(32, 180, 32);
+}
