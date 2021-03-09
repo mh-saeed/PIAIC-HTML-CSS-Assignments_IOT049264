@@ -1,32 +1,50 @@
 body {
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-#contLogo ul li {
-  margin-left: 14px;
-  color: white;
-  border-radius: 50%;
-  padding: 8px 10px 8px 10px;
-  background: rgb(70, 67, 67);
-  font-size: 20px;
-  display: inline;
+ul#contLogo li{
+  display: inline ;
   float: left;
+  font-size: 22px;
+  
+  color: white;
+  padding: 0px 15px 12px 0px;
 }
-#contNumber ul li {
-  margin-left: 14px;
-  font-size: 24px;
+ul#contLogo li i{
+  padding: 8px 12px 8px 12px;
+  border-radius: 50%;
+  background-color: rgb(51, 47, 47);
+} 
+ul#contNumber li{
   display: inline;
   float: right;
+  margin-right: 32px;
+  font-size: 22px;
+  color: white;
 }
-#contNumber ul li i {
-  color: green;
+ul#contNumber li i{
+ color: green;
 }
-#contNumber ul li input {
-  display: block;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
+ul#contNumber li input{
+  font-size: 18px;
   width: 100%;
-  font-weight: bold;
-  background: rgb(32, 180, 32);
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px 5px 10px;
+  background-color: green;
+ }
+
+#contact {
+  overflow: hidden;
+  background-color: rgb(31, 27, 27);
 }
+/* @media only screen and (max-width: 414px) {
+  ul#contLogo li{
+    display: inline block ;
+    font-size: 22px;
+    
+    color: white;
+    padding: 0px 15px 12px 0px;
+  }
+} */
